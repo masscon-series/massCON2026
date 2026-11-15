@@ -1,0 +1,29 @@
+Tek Kişilik Kurucuya Şah Mat: Açık Kaynak (Özgür Yazılım) Neden Satrancı Bırakıp Go Oynamaya Başlamalı?
+
+Bir saniyeliğine gerçekçi olalım. Teknoloji dünyasında iyi efsaneleri severiz. Loş bir odada durmaksızın kod yazan, sıfırdan temel bir yazılım inşa eden ve ardından sonsuza dek "Ömür Boyu İyi Niyetli Diktatör" (BDFL) olarak ona hükmeden yalnız dahi hikayelerine bayılırız.
+
+Açık kaynak ve özgür yazılım çevrelerinde BDFL modeli on yıllardır altın standart olarak kabul edildi. Hızlıdır. Kararlıdır. Bitmek bilmeyen komite saçmalıkları yoktur; tek bir kişi kararları verir, vizyonu saf tutar ve geri kalan herkes hizaya geçer.
+
+Ancak ortada şöyle bir sorun var: BDFL dönemi saatli bir bomba ve artık onu emekliye ayırma vakti geldi.
+
+Eğer bir açık kaynak projesini satranç oyunu gibi yönetiyorsanız, kendinizi kaybetmeye hazırlıyorsunuz demektir. Satrancın nasıl işlediğini bir düşünün. Tek bir kırılgan Şah'ı korumak için ağır işleri yapan taşlarla dolu koca bir tahtanız vardır. Kaç tane piyonunuz olduğunun veya kalelerinizin ne kadar ustaca hareket ettiğinin hiçbir önemi yoktur; o Şah köşeye sıkıştığı saniye oyun biter. Tam bir çöküş.
+
+Modern yazılım ekosisteminde bu, akıl almaz bir tek hata noktasıdır (single point of failure). Tek bir kişi krallığın anahtarlarını —yani kelimenin tam anlamıyla kök erişimini, kod birleştirme yetkilerini ve son sözü— elinde tuttuğunda, tüm proje o tek insanın varlığına göre yaşar veya ölür. Kötü niyetli bir aktör o BDFL'in hesap bilgilerini ele geçirirse, kod tabanı bir gecede zehirlenir. Diktatör tükenmişlik sendromuna girerse, başına bir kaza gelirse veya yoldan çıkarsa, topluluk parçalanır, çatallanır ve kan kaybeder. Sektör genelindeki son tedarik zinciri saldırıları ve proje geliştiricisi tükenmişlikleri dalgasına bir bakın. Tek bir otorite noktasına güvenmek artık romantik değil; devasa bir güvenlik açığı.
+
+Önümüzdeki on yılda hayatta kalmak için açık kaynak yönetişiminin satranç oynamayı bırakıp Go oynamaya başlaması gerekiyor.
+
+Daha önce hiç Go oynamadıysanız, havasının tamamen farklı olduğunu bilmelisiniz. Go'da Şah yoktur. Tahtadan silindiğinde oyunu bitiren tek ve her şeyden önemli bir taş bulunmaz. Bunun yerine bir ızgara tahtanız vardır ve üzerine birbirinin aynısı, eşit taşlar yerleştirirsiniz. Tek başına bir taşın süslü bir unvanı veya özel güçleri yoktur. Ancak kolektif olarak bu taşlar ağlar oluşturur, alanları çevreler ve tahta üzerinde hakimiyet kurar.
+
+Go tahtası gibi inşa edilmiş bir açık kaynak organizasyonu hayal edin. Piramidin tepesinde oturan bir diktatör yerine, otonom ve eşit katılımcılardan oluşan bir ağınız var. Güç, kod birleştirme hakları ve kriptografik anahtarlar topluluğa dağıtılmış durumda.
+
+İşte bu yaklaşımın her şeyi değiştirmesinin nedenleri:
+
+- Doğal dayanıklılık: Kötü niyetli bir aktör bir katılımcının hesabını ele geçirirse —veya kilit bir geliştirici projeden ayrılırsa— bu sadece tahtadan eksilen tek bir taştır. Elbette can sıkıcıdır ve yerel olarak biraz alan kaybedersiniz, ancak sistem çökmez. Çevredeki ağ hasarın etrafından dolaşır, ele geçirilen erişimi iptal eder ve ilerlemeye devam eder.
+- Akışkan ve kolektif kontrol: Go'da kazanmak için %100 hakimiyete ihtiyacınız yoktur; sadece rakibinizden daha fazla etki alanını elinizde tutmanız yeterlidir. Merkeziyetsiz, topluluk temelli bir yönetişim modeli de tam olarak aynı şekilde çalışır. Hiç kimse mutlak kontrolü elinde tutmaz, ancak kolektif yapı projeye yön verecek, kötü niyetli aktörleri engelleyecek ve kod tabanını sağlıklı tutacak kadar merkeziyetsiz otoriteye sahiptir.
+- Darboğazların ortadan kalkması: Kararlar tükenmiş tek bir diktatörün süzgecinden geçmek yerine otonom düğümlere aktarıldığında, projeler kurucularını tüketmeden ölçeklenebilir. Topluluk vizyonu sahiplenir, çünkü makineyi fiilen topluluğun kendisi çalıştırır.
+
+BDFL modelinden uzaklaşmak kolay değil. Egolar devreye giriyor ve insanlar ortak yönetişimin bitmek bilmeyen bir bürokrasi anlamına geleceğinden endişe ediyor. Evet, kimse basit bir yazım hatasını düzeltmek için milyonlarca e-postalık bir posta listesi tartışması istemez.
+
+İşin sırrı tahtanın kurallarını doğru tasarlamakta yatıyor. Kriptografik çoklu imza (multi-sig) onayları, dönüşümlü proje sorumluluğu ve net, otonom çalışma grupları kullanarak bir girişimin hızını merkeziyetsiz bir ağın dayanıklılığıyla birleştirebilirsiniz. Kırılganlık olmadan çeviklik elde edersiniz.
+
+Yalnız teknoloji kurtarıcısı figürü geçmişte kalmış bir kalıntıdır. Yazılım, kaderini tek bir kişinin omuzlarına —ya da tek bir kişinin parola yöneticisine— bırakılamayacak kadar modern dünya için kritiktir. Satranç şahını devirmenin, masayı temizlemenin ve taşları dizmeye başlamanın zamanı geldi.
